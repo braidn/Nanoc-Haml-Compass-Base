@@ -1,5 +1,9 @@
 #!/usr/bin/env ruby
 
+# Compass requirements
+require 'compass'
+Compass.add_project_configuration('config.rb')
+
 # A few helpful tips about the Rules file:
 #
 # * The order of rules is important: for each item, only the first matching
@@ -10,17 +14,18 @@
 #   item, use the pattern “/about/*/”; “/about/*” will also select the parent,
 #   because “*” matches zero or more characters.
 
-compile '/stylesheet/' do
-  # don’t filter or layout
+compile '/stylz/*/' do
+  filter :sass, Compass.sass_engine_options
 end
 
 compile '*' do
   filter :erb
+  filter :haml
   layout 'default'
 end
 
-route '/stylesheet/' do
-  '/style.css'
+route '/stylz/*/' do
+  item.identifier.chop + '.css'
 end
 
 route '*' do
