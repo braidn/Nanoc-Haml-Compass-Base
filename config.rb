@@ -4,8 +4,8 @@
 http_path = "/"
 css_dir = "output/stylz"
 sass_dir = "content/stylz"
-images_dir = "images"
-javascripts_dir = "javascripts"
+images_dir = "output/images"
+javascripts_dir = "output/javascripts"
 
 # You can select your preferred output style here (can be overridden via the command line):
 # output_style = :expanded or :nested or :compact or :compressed

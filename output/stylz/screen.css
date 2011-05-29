@@ -1,0 +1,170 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 17, /Users/colossus/.rvm/gems/ruby-1.9.2-p180/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* line 20, /Users/colossus/.rvm/gems/ruby-1.9.2-p180/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+body {
+  line-height: 1;
+}
+
+/* line 22, /Users/colossus/.rvm/gems/ruby-1.9.2-p180/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 24, /Users/colossus/.rvm/gems/ruby-1.9.2-p180/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 26, /Users/colossus/.rvm/gems/ruby-1.9.2-p180/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 28, /Users/colossus/.rvm/gems/ruby-1.9.2-p180/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 101, /Users/colossus/.rvm/gems/ruby-1.9.2-p180/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 30, /Users/colossus/.rvm/gems/ruby-1.9.2-p180/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 115, /Users/colossus/.rvm/gems/ruby-1.9.2-p180/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 10, content/stylz/screen.sass */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Georgia, Palatino, Times, "Times New Roman", sans-serif;
+}
+
+/* line 15, content/stylz/screen.sass */
+body {
+  background: white;
+}
+
+/* line 18, content/stylz/screen.sass */
+a {
+  text-decoration: none;
+}
+
+/* line 21, content/stylz/screen.sass */
+a {
+  color: #ff3300;
+}
+/* line 18, /Users/colossus/.rvm/gems/ruby-1.9.2-p180/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+a:visited {
+  color: #ff3300;
+}
+/* line 24, /Users/colossus/.rvm/gems/ruby-1.9.2-p180/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+a:hover {
+  color: #ff9900;
+}
+/* line 27, /Users/colossus/.rvm/gems/ruby-1.9.2-p180/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+a:active {
+  color: #ff9900;
+}
+
+/* line 24, content/stylz/screen.sass */
+#main {
+  position: absolute;
+  top: 40px;
+  left: 280px;
+  width: 500px;
+}
+/* line 30, content/stylz/screen.sass */
+#main h1 {
+  font-size: 40px;
+  font-weight: normal;
+  line-height: 40px;
+  letter-spacing: -1px;
+}
+/* line 37, content/stylz/screen.sass */
+#main p {
+  margin: 20px 0;
+  font-size: 15px;
+  line-height: 20px;
+}
+/* line 43, content/stylz/screen.sass */
+#main ul, #main ol {
+  margin: 20px;
+}
+/* line 46, content/stylz/screen.sass */
+#main li {
+  font-size: 15px;
+  line-height: 20px;
+}
+/* line 51, content/stylz/screen.sass */
+#main ul li {
+  list-style-type: square;
+}
+/* line 53, content/stylz/screen.sass */
+#main strong {
+  font-weight: bold;
+}
+
+/* line 57, content/stylz/screen.sass */
+#sidebar {
+  position: absolute;
+  top: 40px;
+  left: 20px;
+  width: 200px;
+  padding: 20px 20px 0 0;
+  border-right: 1px solid #cccccc;
+  text-align: right;
+}
+/* line 66, content/stylz/screen.sass */
+#sidebar h2 {
+  text-transform: uppercase;
+  text-size: 13px;
+  color: #333333;
+  letter-spacing: 1px;
+  line-height: 20px;
+}
+/* line 74, content/stylz/screen.sass */
+#sidebar ul {
+  list-style-type: none;
+  margin: 20px 0;
+}
+/* line 78, content/stylz/screen.sass */
+#sidebar li {
+  font-size: 14px;
+  line-height: 20px;
+}

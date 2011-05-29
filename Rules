@@ -19,8 +19,8 @@ compile '/stylz/*/' do
 end
 
 compile '*' do
-  filter :erb
   filter :haml
+  filter :erb
   layout 'default'
 end
 
@@ -32,4 +32,4 @@ route '*' do
   item.identifier + 'index.html'
 end
 
-layout '*', :erb
+layout '*', :haml, :format => :html5
