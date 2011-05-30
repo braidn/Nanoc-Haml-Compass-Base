@@ -1,0 +1,8 @@
+## Nanoc Static Site Generation Starterpack
+
+There are a ton of these floating around Github. The real reason behind creating this specific one was to play with and get a good grasp on the HAML thing in addition to, having a great and updated springboard for new projects. Some quickie highlights:
+
+1. Nanoc's original layout (current version [3.1.7](http://nanoc.stoneship.org/release-notes/))
+2. [SASS](https://github.com/nex3/sass) via [Compass](https://github.com/chriseppstein/compass) formatted stylesheet (the whitespace dependent .sass version)
+3. [HAML](https://github.com/nex3/haml) for your index and default layouts
+4. Nothing over-the-top special. Simple, sexy, functional.
