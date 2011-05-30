@@ -6,3 +6,8 @@ There are a ton of these floating around Github. However, most of them are out o
 2. [SASS](https://github.com/nex3/sass) via [Compass](https://github.com/chriseppstein/compass) formatted stylesheet (the whitespace dependent .sass version)
 3. [HAML](https://github.com/nex3/haml) for your index and default layouts
 4. Nothing over-the-top special. Simple, sexy, functional.
+
+## Requirements
+
+1. nanoc gem
+2. compass gem
