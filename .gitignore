@@ -6,6 +6,8 @@ NERD_tree_*
 
 #File
 .bundle/*
+.bin/*
+Gemfile.lock
 .sass-cache
 /output/*
 /thoughts/*
