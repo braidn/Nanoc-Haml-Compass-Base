@@ -1,5 +1,12 @@
+#OS Specific
 .DS_Store
+
+#Editor Specific
+NERD_tree_*
+
+#File
+.bundle/*
 .sass-cache
-.sass-cache/*
-.output/*
-NERD_tree_3
+/output/*
+/thoughts/*
+/tmp/*
