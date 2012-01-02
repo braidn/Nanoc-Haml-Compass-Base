@@ -15,21 +15,40 @@ Compass.add_project_configuration('config.rb')
 #   because “*” matches zero or more characters.
 
 compile '/stylz/*/' do
-  filter :sass, Compass.sass_engine_options
+  case item[:extension]
+  when 'sass'
+    filter :sass, Compass.sass_engine_options
+  when 'css'
+    #nothing
+  end
+end
+
+compile '/js/*' do
+  # Change this to mod your coffee files and write a corresponding route
+  # file
 end
 
 compile '*' do
-  filter :haml
-  filter :erb
-  layout 'default'
+  case item[:extension]
+  when 'haml'
+    filter :haml
+  when 'mdown' || 'html'
+    filter :erb
+    filter :bluecloth
+  end
+  layout 'default' unless item[:layout] == 'none'
 end
 
 route '/stylz/*/' do
   item.identifier.chop + '.css'
 end
 
+route '/js/*' do
+  item.identifier.chop + item[:extension]
+end
+
 route '*' do
   item.identifier + 'index.html'
 end
 
-layout '*', :haml, :format => :html5
+layout '*', :haml, :filter => :html5
